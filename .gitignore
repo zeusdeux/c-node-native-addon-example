@@ -1,0 +1,11 @@
+*
+!.gitignore
+!package.json
+!.nvmrc
+!Readme.md
+!*.js
+!*.gyp
+!src
+!src/**/*.[hc]
+!lib
+!**/.gitkeep

@@ -1,0 +1,29 @@
+{
+  "name": "c-node-native-addon-example",
+  "version": "1.0.0",
+  "description": "Simple Node.js native addon written in C",
+  "main": "./addon.js",
+  "scripts": {
+    "prep": "node-gyp install --devdir=./lib --ensure",
+    "build": "npm run configure && node-gyp build -j 3 --devdir=./lib --ensure",
+    "debug": "npm run configure && node-gyp build -j 3 --debug --devdir=./lib --ensure",
+    "configure": "npm run prep && node-gyp configure",
+    "tags": "etags src/**/*.[hc] lib/**/*.[hc]"
+  },
+  "keywords": [
+    "node.js",
+    "native addon",
+    "C"
+  ],
+  "author": "Mudit",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.11.0",
+    "node-gyp": "10.0.1",
+    "prettier": "3.2.5",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "bindings": "1.5.0"
+  }
+}
