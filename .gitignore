@@ -5,6 +5,8 @@
 !Readme.md
 !*.js
 !*.gyp
+!*.h
+!*.c
 !src
 !src/**/*.[hc]
 !lib

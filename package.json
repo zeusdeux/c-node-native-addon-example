@@ -9,7 +9,7 @@
     "build": "npm run configure && node-gyp build -j 3 --devdir=./lib --ensure",
     "debug": "npm run configure && node-gyp build -j 3 --debug --devdir=./lib --ensure",
     "configure": "npm run prep && node-gyp configure",
-    "tags": "etags src/**/*.[hc] lib/**/*.[hc]"
+    "tags": "shopt -s globstar && etags src/**/*.[h] lib/**/*.[hc] && echo 'Done!'"
   },
   "keywords": [
     "node.js",
