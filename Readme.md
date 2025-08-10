@@ -1,15 +1,21 @@
-# C based Node.js native addon
+# C based minimal Node.js native addon example
 
-Teaching myself how to write native addons for Node.js in C.
+An example of a Node.js native addon using C.
 
-> je ne parle pas C++ ¯\\\_(ツ)\_/¯
+No extra tools other than node and a C compiler on `$PATH` for build.
+`node-gyp` that ships with node is used to install node headers.
 
-To use the exported function, do &emdash;
+If you are on windows, you can write a `build.bat` based off of
+the `Makefile` yourself.
+
+To build and run the addon &mdash;
 
 ```bash
-pnpm build &>/dev/null && node -e 'console.log("Value returned from addon:", require("./addon").hello())'
+npm run build && npm test
+# Should print Hello from addon!
+# No npm install necessary either btw.
 ```
 
 ## Learnings
 
-- The `target_name` in `binding.gyp` is what is passed to `bindings(...)` in `<root>/addon.js`
+- `.node` extension is necessary for `node` to actually load the addon
