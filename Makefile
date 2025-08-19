@@ -5,11 +5,10 @@ ifeq ($(OS), Darwin)
 	# on darwin, the linker complains about missing fns such as _main
 	# even when building a shared object
 	LINKER_FLAGS=-Wl,-undefined -Wl,dynamic_lookup
-else ifeq($(OS), Linux)
+endif
+
+ifeq ($(OS), Linux)
 	CC=gcc
-	LINKER_FLAGS=
-else
-	CC=
 	LINKER_FLAGS=
 endif
 

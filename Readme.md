@@ -17,6 +17,9 @@ npm run build && npm test
 # No npm install necessary either btw.
 ```
 
+And as always with JS, there's noise to ask kindly to stfu.
+If `npm` is yelling about updates, run `npm config set update-notifier false` to shut it up.
+
 ## Learnings
 
 - `.node` extension is necessary for `node` to actually load the addon
