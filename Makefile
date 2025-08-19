@@ -30,7 +30,7 @@ build: clean ensure
 
 ensure:
 	mkdir -p $(BUILD_DIR)
-	npm run prep-node-headers
+	npm run prep-node-headers # we invoke node-gyp via npm so that node-gyp that ships with npm is used
 
 clean:
 	rm -fr $(BUILD_DIR)
