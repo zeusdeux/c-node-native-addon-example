@@ -3,7 +3,7 @@
 An example of a Node.js native addon using C.
 
 No extra tools other than node and a C compiler on `$PATH` needed for
-build. `node-gyp` that ships with node is used to install node
+build. `node-gyp` that ships with node (via npm that ships with node) is used to install node
 headers.
 
 If you are on windows, you can write a `build.bat` based off of
