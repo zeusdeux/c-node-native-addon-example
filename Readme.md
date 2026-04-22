@@ -12,9 +12,9 @@ the `Makefile` yourself.
 To build and run the addon &mdash;
 
 ```bash
-npm run build && npm test
+make test
+# This does the build prior to running the test
 # Should print Hello from addon!
-# No npm install necessary either btw.
 ```
 
 And as always with JS, there's noise to ask kindly to stfu.

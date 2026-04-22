@@ -6,8 +6,6 @@
   "main": "./addon.js",
   "scripts": {
     "prep-node-headers": "node-gyp install --devdir=./lib --ensure",
-    "build": "make -B",
-    "tags": "cscope -b -q",
     "versions": "which node-gyp; node-gyp --version",
     "test": "node test.js"
   },
