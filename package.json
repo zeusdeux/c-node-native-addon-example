@@ -6,8 +6,7 @@
   "main": "./addon.js",
   "scripts": {
     "prep-node-headers": "node-gyp install --devdir=./lib --ensure",
-    "versions": "which node-gyp; node-gyp --version",
-    "test": "node test.js"
+    "versions": "which node-gyp; node-gyp --version"
   },
   "keywords": [
     "C",

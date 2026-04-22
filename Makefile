@@ -42,6 +42,6 @@ tags:
 	cscope -b -q
 
 test: build
-	npm test
+	node test.js
 
 .PHONY: all build fetch-node-headers clean dump tags
